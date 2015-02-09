@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Encryption</title>
+    
+    <link rel="icon" href="img/Trademark-CryphekaI.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Trademark-CryphekaI.ico" type="image/x-icon" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Crypheka, LLC.</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="encrypt.html">Encryption</a></li>
+                  <li><a href="decrypt.html">Decryption</a></li>
+                  <li><a href="cryptellegram.html">Cryptellegram</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div><!--container-->
+            <!--Start of the content within the encryption page -->
+<div class="container">
+  
+  <div class="row">
+        <div class="col-md-12">
+          <h1>Encryption</h1>
+        </div><!--col-md-12-->
+  </div><!--row-->
+  
+  <div class="row">
+        <div class="col-md-4">
+          <h3>Step 1</h3>
+          <p>Enter the a key that is only unique to the recipient and yourself. 
+            Then enter your desired message or upload a file to your liking that
+            you wish to encrypt.</p>
+        </div><!--col-md-4-->
+
+        <div class="col-md-4">
+          <h3>Step 2</h3>
+           <p>After you completed your message, select the options towards the left 
+             in regards to the message being viewed by a specific device or a group
+             of people and if you wish to have a time deadling for the message.</p>
+        </div><!--col-md-4-->
+
+        <div class="col-md-4">
+          <h3>Step 3</h3>
+           <p>Select the "Encrypt" button, to convert the message into an encryption 
+             and select the "Copy" button to copy the newly encrypted message.  From 
+             there you can place the encrypted message in any document or sending service. 
+             It will be on the recipient to come back to our service to decrypt it with
+             the key that you provided.</p>
+        </div><!--col-md-4-->
+  </div><!--row for all three steps-->
+
+ <div class="row">
+        <div class="col-md-12">
+        </div><!--col-md-12-->
+  </div><!--blank space row-->
+  
+  <div class="row">
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <h3>Special Key</h3>
+          </div><!--panel title-->
+        </div><!--panel heading-->
+
+        <div class="panel-body">
+         <input type="text" class="form-control" id="key_id" placeholder="Enter special key word for message...">
+        </div><!--panel body-->
+      </div><!--panel-default-->
+    </div><!--col-md-9-->
+
+    <div class="col-md-3">
+      
+    </div><!--col-md-3-->
+
+
+ </div><!--row-->
+
+
+
+
+
+  <div class="row">
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <h3>Message</h3>
+          </div><!--panel-title-->
+        </div><!--panel heading-->
+
+        <div class="panel-body">
+          <textarea class="form-control" id="message_content" placeholder="Enter the content you wish to encrypt with our service..." rows="25"></textarea>
+        </div><!--panel body-->
+
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-xs-6">
+                <input type="file" id="exampleInputFile">
+            </div>
+          
+            <div class="col-xs-6" >
+              <button type="submit" class="btn btn-default pull-right" align="right">Encrypt</button>
+               <button type="submit" class="btn btn-default pull-right">Copy</button>
+              <button type="submit" class="btn btn-default pull-right">Clear</button>
+            </div>
+          </div><!--row-->
+        </div><!--panel footer--> 
+      </div><!--panel panel default-->
+    </div><!--col-md-9-->
+    
+    
+      <div class="col-md-3">
+         <div class="btn-group-vertical btn-block" role="group" aria-label="..." data-toggle="buttons">
+           <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal1">
+                  Devic Specific
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Enter Device Information</h4>
+                        <p>If you wish the message to be viewed on a particular set of devices enter the target device's computer indentification number in the respective boxes </p>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                            <label for="deviceInformation1">Device Information #1</label>
+                            <input type="text" class="form-control" id="deviceInformation1" placeholder="Enter Device Information 1">
+                          
+                           <label for="deviceInformation2">Device Information #2</label>
+                            <input type="text" class="form-control" id="deviceInformation2" placeholder="Enter Device Information 2">
+                          
+                           <label for="deviceInformation3">Device Information #3</label>
+                            <input type="text" class="form-control" id="deviceInformation3" placeholder="Enter Device Information 3">
+                          
+                           <label for="deviceInformation4">Device Information #4</label>
+                            <input type="text" class="form-control" id="deviceInformation4" placeholder="Enter Device Information 4">
+                          
+                           <label for="deviceInformation5">Device Information #5</label>
+                            <input type="text" class="form-control" id="deviceInformation5" placeholder="Enter Device Information 5">
+                          
+                           <label for="deviceInformation6">Device Information #6</label>
+                            <input type="text" class="form-control" id="deviceInformation6" placeholder="Enter Device Information 6">
+                          </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default">Save Changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+   
+           
+                                   <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal2">
+                          Group Specific
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Enter Group Identification</h4>
+                                <p>If you wish to have your message sent out into a group please enter the group identification number or text in the box below</p>
+                              </div>
+                              <div class="modal-body">
+                               
+                                <div class="form-group">
+                                      <label for="groupID">Group I.D</label>
+                                      <input type="text" class="form-control" id="groupID" placeholder="Enter Group I.D.">
+                                    </div>     
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default">Save Changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+           
+           
+                                           <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal3">
+                                  Time Sensitive
+                                  </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Time Sensitive</h4>
+                                        <p>If you wish to have a deadline on the time and date the message can be viewed fill in the information below.</p>
+                                      </div>
+                                      <div class="modal-body">
+                                       
+                                        
+                                        
+                                        
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Enter Date Deadline</label>
+                                          <input type="date" class="form-control" id="exampleInputEmail1" min="2000-01-01">
+                                          
+                                          <label for="enterTime">Enter Time Deadline</label>
+                                          <input type="time" class="form-control" id="enterTime">
+                                        </div>
+                                        
+                                        
+                                        
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-default">Save Changes</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+    
+   
+           
+        
+    
+ 
+        </div>
+      </div>
+  </div><!--row for entire new section of the body message--> 
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <div class="container">
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Crypheka, LLC. &middot; <a href="disclaimer.html">Disclaimer</a> &middot; <a href="terms.html">Terms</a></p>
+      </footer>
+    
+    </div>
+    
+
+ </body>
+</html>

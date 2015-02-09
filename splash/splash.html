@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypheka Coming Soon!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <!-- Custom CSS -->
+    <link href="css/greyscale-video.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    
+    
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand page-scroll" href= "../home/index.html">
+             <span class="light">Crypheka,</span>LLC.
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                  <!-- Insert the Text you want to display here -->
+                  <div class="col-md-8 col-md-offset-2">
+                    <h1 align="center">Coming Soon!</h1>
+                    <p class="intro-text" align="center"> The Crypheka site is currently under construction and will be up as soon as possible. If you wish to be contacted when it is immediately up and running please feel free to drop your email below.  </p>
+                  </div>
+               <div class="col-md-8 col-md-offset-2">
+                    <!--<h1 align="">Leave Your Email</h1>
+                    <p>...to be notified when we launch</p>
+                    <div> -->
+                      <input id="mc-email" type="email" autocomplete="off" placeholder="Email Address...">
+                      <input id="mc-submit" type="submit" value="Submit">
+                    </div>
+                  </div> 
+
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <a id="bgndVideo" class="player"  data-property="{videoURL:'https://www.youtube.com/watch?v=QNZOOSxfQn8',containment:'body',autoPlay:true, mute:true, startAt:0,opacity:1,ratio:'16/9', addRaster:true, realfullscreen:true}">My video</a> 
+    <!-- The video needs to be stopped at 2:30 -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <!-- JS for mb.YTPlayer -->
+    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+   
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  
+    <script>
+      jQuery(function(){
+                
+       // Uncomment the following line if you want to have a background video
+       jQuery(".player").mb_YTPlayer();
+
+      })
+    </script>
+  </body>
+</html>
